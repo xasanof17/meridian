@@ -19,7 +19,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["@/assets/scss/main.scss","@/assets/scss/fonts.scss"],
+  css: ["@/assets/scss/main.scss", "@/assets/scss/fonts.scss"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -28,13 +28,19 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  target: 'static',
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxt/postcss8",
+    '@nuxt/image',
+
+  ],
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: [
+    '@nuxt/image',
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
